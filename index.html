@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Moveit Rádio | Oficiálne odkazy a Live Show</title>
-    <meta name="description" content="Všetky dôležité odkazy Moveit Rádia na jednom mieste. Počúvaj našu Live Show, navštív web alebo sleduj DJ Filipa.">
-    <meta name="keywords" content="Moveit Rádio, DJ Filip, live show, slovenské rádio, hudba, online rádio, stream">
+    <title>Moveit Rádio | Oficiálne odkazy a Recenzie</title>
+    <meta name="description" content="Všetky dôležité odkazy Moveit Rádia na jednom mieste. Počúvaj Live Show, napíš nám recenziu alebo nás kontaktuj priamo.">
+    <meta name="keywords" content="Moveit Rádio, DJ Filip, recenzie Moveit Rádio, live show, slovenské rádio, online stream, hudba">
     <meta name="author" content="Moveit Rádio">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://moveitradio.sk/">
     <meta property="og:title" content="Moveit Rádio | Tvoja vlna energie">
-    <meta property="og:description" content="Všetky dôležité odkazy a naša Live Show na jednom mieste.">
+    <meta property="og:description" content="Všetky dôležité odkazy a možnosť napísať nám recenziu na jednom mieste.">
     <meta property="og:image" content="https://lh3.googleusercontent.com/d/1iuStY2ljPhULgoZQXEHAAYlBAW-3tneg">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Moveit Rádio | Odkazy">
-    <meta property="twitter:description" content="Klikni pre prístup k webu, Live Show a sociálnym sieťam Moveit Rádia.">
 
     <link rel="canonical" href="https://moveitradio.sk/">
     
@@ -30,6 +26,7 @@
             --primary: #6366f1; 
             --secondary: #06b6d4; 
             --accent: #f43f5e; 
+            --gold: #fbbf24;
             --bg-dark: #020617; 
             --text-main: #f8fafc;
             --glass: rgba(15, 23, 42, 0.7);
@@ -122,10 +119,14 @@
         .link-main { 
             background: linear-gradient(135deg, var(--primary), var(--secondary)); 
             border: none;
-            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
         }
         .link-main i { color: #fff; }
-        .link-main:hover { box-shadow: 0 15px 35px rgba(99, 102, 241, 0.5); }
+
+        .link-review {
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+        .link-review i { color: var(--gold); }
+        .link-review:hover { border-color: var(--gold); box-shadow: 0 10px 25px rgba(251, 191, 36, 0.2); }
 
         footer { 
             width: 100%;
@@ -141,18 +142,17 @@
             text-transform: uppercase; color: var(--footer-text); transition: 0.3s;
         }
 
-        .footer-link:hover .copyright-text { color: var(--secondary); text-shadow: 0 0 10px var(--secondary); }
+        .footer-link:hover .copyright-text { color: var(--secondary); }
 
         .social-icons-footer { display: flex; justify-content: center; gap: 25px; margin-bottom: 25px; }
         .social-icons-footer a { color: var(--footer-text); font-size: 1.6rem; transition: 0.4s; }
-        .social-icons-footer a:hover { color: var(--secondary); transform: translateY(-5px) scale(1.1); }
+        .social-icons-footer a:hover { color: var(--secondary); transform: translateY(-5px); }
 
         .author-text {
             font-size: 0.65rem; font-weight: 700; letter-spacing: 4px;
             text-transform: uppercase; color: rgba(255,255,255,0.2);
         }
-        .author-text a { color: var(--secondary); text-decoration: none; font-weight: 800; opacity: 0.7; transition: 0.3s; }
-        .author-text a:hover { opacity: 1; color: var(--accent); }
+        .author-text a { color: var(--secondary); text-decoration: none; font-weight: 800; }
     </style>
 </head>
 <body>
@@ -165,7 +165,7 @@
         <h1>MOVEIT RÁDIO</h1>
         <p class="tagline">Tvoja vlna energie</p>
 
-        <nav class="links-wrapper" aria-label="Sociálne a webové odkazy">
+        <nav class="links-wrapper" aria-label="Odkazy">
             <a href="https://moveitradio.sk" class="link-card link-main">
                 <i class="fas fa-play-circle" aria-hidden="true"></i> HLAVNÝ WEB RÁDIO
             </a>
@@ -176,6 +176,10 @@
             
             <a href="https://www.print-up.at/" target="_blank" rel="noopener sponsored" class="link-card">
                 <i class="fas fa-star" aria-hidden="true"></i> NÁŠ PARTNER
+            </a>
+
+            <a href="https://share.google/JYfJ7kRZrGoW9r8IH" target="_blank" rel="noopener" class="link-card link-review">
+                <i class="fas fa-comment-dots" aria-hidden="true"></i> NAPÍŠ NÁM RECENZIU
             </a>
         </nav>
     </main>
@@ -188,7 +192,7 @@
             <a href="https://www.tiktok.com/@moveitradio_sk" target="_blank" rel="noopener" aria-label="TikTok">
                 <i class="fab fa-tiktok"></i>
             </a>
-            <a href="mailto:info@moveitradio.sk" aria-label="Email">
+            <a href="mailto:moveit.radiosk@gmail.com" aria-label="Email">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
