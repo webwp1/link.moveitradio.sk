@@ -130,6 +130,32 @@
         .link-review i { color: var(--gold); }
         .link-review:hover { border-color: var(--gold); box-shadow: 0 10px 25px rgba(251, 191, 36, 0.2); }
 
+        /* Banner sekcia pod recenziami */
+        .banner-wrapper {
+            margin-top: 25px;
+            text-align: center;
+            width: 100%;
+        }
+        .banner-label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--footer-text);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .banner-img-link {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .banner-img-link:hover {
+            transform: scale(1.1);
+        }
+        .banner-img-link img {
+            border-radius: 12px;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+        }
+
         footer { 
             width: 100%;
             padding: 50px 20px; 
@@ -183,6 +209,13 @@
             <a href="https://g.page/r/Ccx7cqpVWPAUEBI/review" target="_blank" rel="noopener" class="link-card link-review">
                 <i class="fas fa-comment-dots" aria-hidden="true"></i> NAPÍŠ NÁM RECENZIU
             </a>
+
+            <div class="banner-wrapper">
+                <p class="banner-label">Nájdeš nás aj na</p>
+                <a href="https://myonlineradio.sk/moveit-radio" title="Moveit Rádio - MyOnlineRadio.sk" target="_blank" class="banner-img-link">
+                    <img src="https://myonlineradio.sk/public/img/launcher/logo_96.png" title="Moveit Rádio - MyOnlineRadio.sk" alt="Moveit Rádio - MyOnlineRadio.sk">
+                </a>
+            </div>
         </nav>
     </main>
 
